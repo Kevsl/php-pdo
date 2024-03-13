@@ -15,6 +15,8 @@ if (isset($_POST)) {
     $userManager = new UserManager($dbConnexion);
 
     if ($userManager->login($user["email"], $user["password"])) {
-        echo "success"
+        echo "success";
+    }else{
+        echo"didn't work";
     }
 }

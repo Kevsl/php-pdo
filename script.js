@@ -17,5 +17,5 @@ function handleLogin() {
 
   fetch("./login.php", params)
     .then((res) => res.text())
-    .then((data) => console.log("success"));
+    .then((data) => console.log(data));
 }
